@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -17,8 +18,9 @@ export default function Home() {
         </div>
 
         <div className="button-container">
-          <button className="start-btn">Start <br/> Adventure</button>
+          <Link className="start-btn" href="/start">Start <br/> Adventure</Link>
         </div>
+
       </main>
     </>
   )
